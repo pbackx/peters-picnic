@@ -102,3 +102,7 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# test and training images... get these from the Hackathon page
+test/
+train/
