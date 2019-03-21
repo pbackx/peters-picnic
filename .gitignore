@@ -106,3 +106,4 @@ venv.bak/
 # test and training images... get these from the Hackathon page
 test/
 train/
+*.hdf5

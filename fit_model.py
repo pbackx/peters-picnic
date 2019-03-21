@@ -40,7 +40,7 @@ def paths_to_tensor(prefix, img_paths):
 X_train = paths_to_tensor("train/", np.array(train['file']))
 X_valid = paths_to_tensor("train/", np.array(valid['file']))
 
-labels = train['label'].unique()
+labels = sorted(train['label'].unique())
 
 one_hot_encoding = preprocessing.LabelBinarizer()
 one_hot_encoding.fit(labels)
