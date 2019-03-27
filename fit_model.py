@@ -57,7 +57,7 @@ for layer in model.layers:
 model.add(GlobalAveragePooling2D())
 model.add(Dense(1024, activation='relu'))
 model.add(Dropout(0.2))
-model.add(Dense(labels.size, activation='softmax'))
+model.add(Dense(len(labels), activation='softmax'))
 print(model.summary())
 
 opt = Adam(lr=0.001, beta_1=0.9, beta_2=0.999, epsilon=1e-08, decay=0.1)
