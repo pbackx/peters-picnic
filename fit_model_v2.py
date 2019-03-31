@@ -13,8 +13,8 @@ from tqdm import tqdm
 from sklearn.model_selection import train_test_split
 from sklearn import preprocessing
 
-HEIGHT = 224
-WIDTH = 224
+HEIGHT = 299
+WIDTH = 299
 
 #split in training and validation data https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
 #yay, also works on dataframes: https://stackoverflow.com/a/24151789/227081
